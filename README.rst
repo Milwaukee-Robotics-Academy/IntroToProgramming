@@ -1,10 +1,10 @@
-IntroToRobotics 
+IntroToProgramming
 ===============
 
 This is the active development repository for the readthedocs curriculum, found here:
-https://introtoroboticsv2.readthedocs.io/en/latest/index.html
+https://introduction-to-programming.readthedocs.io/en/latest/
 
-Introduction to Robotics Curriculum
+Introduction to Programming FOR FRC Curriculum
 
 A list of rules to follow while documenting a .rst file:
 
