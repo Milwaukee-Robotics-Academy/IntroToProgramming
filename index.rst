@@ -25,7 +25,7 @@ Getting Started
    :caption: Introduction to the YAGSL
 
    course/YAGSL/whatis
-   course/YAGSL/Getting_Started
+   course/YAGSL/getting_started
    course/YAGSL/configs
 
 
