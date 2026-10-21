@@ -5,5 +5,5 @@ Follow this guide to get started with YAGSL. YAGSL is a Java library that allows
 
 .. tip:: 
 
-    Open a new tab and go to the `YAGSL Github Repository <https://config.yagsl.com/guide>`_.
+    Open a new tab and go to the `YAGSL Getting Started Guide <https://config.yagsl.com/guide>`_.
 
