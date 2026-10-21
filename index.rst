@@ -21,8 +21,7 @@ Getting Started
 
 .. toctree:: 
    :maxdepth: 1
-   :hidden:
-   :caption: Introduction to the YAGSL
+   :caption: Introduction to YAGSL
 
    course/YAGSL/whatis
    course/YAGSL/getting_started
@@ -34,7 +33,6 @@ Getting Started
    :maxdepth: 1
    :titlesonly:
    :caption: Bench testing
-   :hidden:
 
    course/benchtesting
 
