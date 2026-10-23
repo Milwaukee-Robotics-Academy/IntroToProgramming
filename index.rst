@@ -27,6 +27,11 @@ Getting Started
    course/YAGSL/getting_started
    course/YAGSL/configs
 
+.. toctree:: 
+   :maxdepth: 1
+   :caption: Adding new repository to Github
+
+   course/github/add_new_repo
 
 
 .. toctree:: 
