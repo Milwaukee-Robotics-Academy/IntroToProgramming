@@ -14,5 +14,4 @@ Follow this guide to get started with YAGSL. YAGSL is a Java library that allows
 
 .. tip:: 
     
-    If you want the robot to go backwards, use a negative speed value just like
-    you did with the effort value.
+    Build your code to test if it compiles. If it does not compile, check the error messages and fix the issues. If you are having trouble, ask for help from your instructor or a mentor.
