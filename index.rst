@@ -8,7 +8,7 @@ Intro to Programming with Java for FRC
       
       course/github/getting_started_github
       course/github/joining_mra_organization
-
+      course/github/add_new_repo
 
 
    .. toctree::
@@ -25,12 +25,6 @@ Intro to Programming with Java for FRC
       :caption: Course information
    course/YAGSL/getting_started
    course/YAGSL/configs
-
-.. toctree:: 
-   :maxdepth: 1
-   :caption: Adding new repository to Github
-
-   course/github/add_new_repo
 
 
 .. toctree:: 
