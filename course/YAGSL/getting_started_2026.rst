@@ -7,7 +7,7 @@ Follow this guide to get started with YAGSL. YAGSL is a Java library that allows
 
     * In VS Code, you can use the `Ctrl + Shift + P` shortcut to open the command palette and search for commands. This is a great way to quickly access features and functions in VS Code.
     * Select the `Git: Clone` command and paste the URL of the repository you want to clone. This will create a local copy of the repository on your machine.
-    * We can use a version from 2026: `https://github.com/Milwaukee-Robotics-Academy/2026.git`_.
+    * We can use a version from 2026: `https://github.com/Milwaukee-Robotics-Academy/2026.git <https://github.com/Milwaukee-Robotics-Academy/2026.git>`_.
     * Switch to the `yagsl-example` Branch. This will give you a starting point for your robot code. Copy that code into your project and use it as a starting point for your robot code.
     * If we were going to start from scratch, we would use this URL we are using is `https://github.com/Yet-Another-Software-Suite/YAGSL-Example.git <https://github.com/Yet-Another-Software-Suite/YAGSL-Example.git>`_.
 
