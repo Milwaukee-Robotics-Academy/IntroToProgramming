@@ -10,20 +10,19 @@ Getting Started
 * Once you have a Github account, please log in. and let the instructor know your Github username. The instructor will add you to the MRA Organization.
 
 
+
+   .. toctree::
+      :maxdepth: 1
+      :hidden:
+      :caption: Getting the YAGSL example
+      
+      course/YAGSL/getting_started_2026
+
 .. Comment out for now. not using
    .. toctree::
       :maxdepth: 1
       :hidden:
       :caption: Course information
-
-      course/course_info/index
-      course/course_info/getting_help
-
-.. toctree:: 
-   :maxdepth: 1
-   :caption: Introduction to YAGSL
-
-   course/YAGSL/whatis
    course/YAGSL/getting_started
    course/YAGSL/configs
 
