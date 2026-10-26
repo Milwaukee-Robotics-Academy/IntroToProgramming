@@ -9,7 +9,7 @@ Intro to Programming with Java for FRC
       course/github/getting_started_github
       course/github/joining_mra_organization
       course/github/add_new_repo
-
+      course/github/switch_logins_vscode
 
    .. toctree::
       :maxdepth: 1
