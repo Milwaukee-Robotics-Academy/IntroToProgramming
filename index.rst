@@ -4,7 +4,6 @@ Intro to Programming with Java for FRC
 
    .. toctree::
       :maxdepth: 1
-      :hidden:
       :caption: Setting up GitHub
       
       course/github/getting_started_github
@@ -14,7 +13,6 @@ Intro to Programming with Java for FRC
 
    .. toctree::
       :maxdepth: 1
-      :hidden:
       :caption: Getting the YAGSL example
       
       course/YAGSL/getting_started_2026
