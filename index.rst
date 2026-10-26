@@ -17,7 +17,7 @@ Getting Started
       :caption: Getting the YAGSL example
       
       course/YAGSL/getting_started_2026
-      course/YAGSL/configs
+      course/YAGSL/configs_2026
 
 .. Comment out for now. not using
    .. toctree::
