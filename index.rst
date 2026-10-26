@@ -2,12 +2,13 @@
 Intro to Programming with Java for FRC
 ======================================
 
-Getting Started
----------------
-
-* Please open in a new tab: `Github Code Management <https://github.com/>`_.
-* If you have a Github account, please log in. If you do not have a Github account, please create one.
-* Once you have a Github account, please log in. and let the instructor know your Github username. The instructor will add you to the MRA Organization.
+   .. toctree::
+      :maxdepth: 1
+      :hidden:
+      :caption: Setting up GitHub
+      
+      course/github/getting_started_github
+      course/github/joining_mra_organization
 
 
 
