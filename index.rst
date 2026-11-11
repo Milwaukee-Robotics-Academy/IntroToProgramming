@@ -36,6 +36,13 @@ Intro to Programming with Java for FRC
 
 .. toctree:: 
    :maxdepth: 1
+   :titlesonly:
+   :caption: Odometry
+
+   course/odometry/odometry_basics
+
+.. toctree:: 
+   :maxdepth: 1
    :caption: Join a team Today!
    :hidden:   
 
