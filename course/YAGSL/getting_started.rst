@@ -1,11 +1,11 @@
-Getting Started with WPILib for Systemcore
-===========================================
+Getting Started with YAGSL
+============================
 
-Follow this guide to get started with WPILib for Systemcore. WPILib is a Java library that allows you to program your robot using a simple and easy-to-understand syntax.
+Follow this guide to get started with YAGSL. YAGSL is a Java library that allows you to program your robot using a simple and easy-to-understand syntax.
 
 .. tip:: 
 
-    If you have not run the Installation scripts, you can follow the guide to manually install, here: `WPILib Installation Guide <https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html>`_.
+    Open a new tab and go to the `YAGSL Getting Started Guide <https://config.yagsl.com/guide>`_.
 
 .. admonition:: Try it out
 
