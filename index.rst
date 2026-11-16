@@ -36,6 +36,13 @@ Intro to Programming with Java for FRC
 
 .. toctree:: 
    :maxdepth: 1
+   :caption: 2027!
+
+   course/2027/getting_started
+   course/2027/whats_new_in_wpilib
+
+.. toctree:: 
+   :maxdepth: 1
    :caption: Join a team Today!
    :hidden:   
 
