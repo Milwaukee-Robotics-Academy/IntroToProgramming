@@ -10,32 +10,32 @@ DriverStationDisplay (ANSI Console): Built-in terminal output stream on the 2027
 Code Pattern: Publishing & Tuning
 
 
+.. code-block:: Java
+    Java
+    import org.wpilib.telemetry.Telemetry;
+    import org.wpilib.tunables.TunableDouble;
+    import org.wpilib.tunables.Selectable;
 
-Java
-import org.wpilib.telemetry.Telemetry;
-import org.wpilib.tunables.TunableDouble;
-import org.wpilib.tunables.Selectable;
+    public class FlywheelController {
+        // Explicitly tunable from dashboard (read/write)
+        private final TunableDouble kP = new TunableDouble("Shooter/kP", 0.05);
+        private final Selectable<String> modeSelector = new Selectable<>("Shooter/Mode");
 
-public class FlywheelController {
-    // Explicitly tunable from dashboard (read/write)
-    private final TunableDouble kP = new TunableDouble("Shooter/kP", 0.05);
-    private final Selectable<String> modeSelector = new Selectable<>("Shooter/Mode");
+        public FlywheelController() {
+            modeSelector.addOption("Speaker", "SPEAKER");
+            modeSelector.addOption("Pass", "PASS");
+            modeSelector.setDefault("SPEAKER");
+            Telemetry.publish("Shooter/ModeSelector", modeSelector);
+        }
 
-    public FlywheelController() {
-        modeSelector.addOption("Speaker", "SPEAKER");
-        modeSelector.addOption("Pass", "PASS");
-        modeSelector.setDefault("SPEAKER");
-        Telemetry.publish("Shooter/ModeSelector", modeSelector);
-    }
-
-    public void periodic(double currentRpm) {
-        // Read-only outbound telemetry
-        Telemetry.publish("Shooter/CurrentRPM", currentRpm);
-        if (kP.hasChanged()) {
-            updatePidGains(kP.get());
+        public void periodic(double currentRpm) {
+            // Read-only outbound telemetry
+            Telemetry.publish("Shooter/CurrentRPM", currentRpm);
+            if (kP.hasChanged()) {
+                updatePidGains(kP.get());
+            }
         }
     }
-}
 
 
 Software Lab 2: Telemetry Refactor
