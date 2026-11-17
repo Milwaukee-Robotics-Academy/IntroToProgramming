@@ -30,7 +30,8 @@ Code Diff Reference: Lifecycle & Kinematics
 Code examples of differences between 2026 and 2027 WPILib are shown below.
 
 2026 WPILib
-.. code-block:: Java
+
+.. code-block:: java
 
     package frc.robot;
     import edu.wpi.first.wpilibj.TimedRobot;
@@ -49,8 +50,9 @@ Code examples of differences between 2026 and 2027 WPILib are shown below.
     }
 
 2027 WPILib
-.. code-block:: Java
-    
+
+.. code-block:: java
+
     package frc.robot;
     import org.wpilib.framework.TimedRobot;
     import org.wpilib.math.kinematics.ChassisVelocities;
