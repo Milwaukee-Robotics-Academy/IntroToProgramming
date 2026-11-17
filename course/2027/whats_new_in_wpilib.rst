@@ -27,8 +27,8 @@ Silent Bug Risk: Nanosecond Timestamps:
 ---------------------------------------
 * Systemcore's OS clock exposes nanoseconds rather than microseconds. Raw calls like RobotController.getTime() and getMonotonicTime() now return nanoseconds (10^9 ticks/sec instead of 10^6). Any hardcoded / 1e6 math in custom PID loops or odometry filters will break silently by 3 orders of magnitude. Always use strongly-typed org.wpilib.units.measure.Time (Seconds, Milliseconds).
 
-Code Diff Reference: Lifecycle & Kinematics
---------------------------------------------
+Code Diff Reference:
+--------------------
 
 Code examples of differences between 2026 and 2027 WPILib are shown below.
 
@@ -73,7 +73,7 @@ Code examples of differences between 2026 and 2027 WPILib are shown below.
 
 
 
-Software Lab 1: Automated Port & Static Audit
+Software Lab 1: 
 ---------------
 * Create a 2027-migration branch on your 2026 robot repo and run the WPILib 2027 Project Importer.
 * Refactor Robot.java to eliminate robotInit() and make subsystem references private final.
