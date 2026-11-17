@@ -11,7 +11,7 @@ Code Pattern: Publishing & Tuning
 
 
 .. code-block:: Java
-    Java
+
     import org.wpilib.telemetry.Telemetry;
     import org.wpilib.tunables.TunableDouble;
     import org.wpilib.tunables.Selectable;
