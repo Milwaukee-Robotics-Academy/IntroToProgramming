@@ -10,7 +10,7 @@ DriverStationDisplay (ANSI Console): Built-in terminal output stream on the 2027
 Code Pattern: Publishing & Tuning
 
 
-.. code-block:: Java
+.. code-block:: java
 
     import org.wpilib.telemetry.Telemetry;
     import org.wpilib.tunables.TunableDouble;
