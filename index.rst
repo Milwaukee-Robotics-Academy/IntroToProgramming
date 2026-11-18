@@ -17,6 +17,7 @@ Intro to Programming with Java for FRC
 
    course/2027/getting_started
    course/2027/whats_new_in_wpilib
+   course/2027/last_years_code
 
 .. toctree::
    :maxdepth: 1
