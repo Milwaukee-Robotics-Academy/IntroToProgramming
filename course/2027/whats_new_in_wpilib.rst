@@ -12,6 +12,10 @@ Namespace & Kinematics Semantics:
 * Kinematics types are renamed for dimensional accuracy: ChassisSpeeds  ChassisVelocities and SwerveModuleState  SwerveModuleVelocity.
 * WPILib constants and enums are standardized to ALL_CAPS (kReverse  REVERSE).
 
+SmartDashboard is replaced
+--------------------------
+* Starting in WPILib for 2027 (introduced in Alpha 7), SmartDashboard, SendableChooser, and Sendable are replaced by the Telemetry and Tunables APIs. SendableChooser is replaced by Selectable, and both the SmartDashboard application and Shuffleboard are deprecated/removed for 2027
+
 Constructor-Driven Robot Lifecycle:
 -----------------------------------
 * robotInit() is deleted. All robot initialization now executes inside the Robot() constructor, aligning WPILib with standard Java object instantiation rules (final fields can now be initialized cleanly without nullable fields or lateinit workarounds).
