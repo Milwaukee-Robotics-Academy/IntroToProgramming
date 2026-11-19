@@ -15,6 +15,7 @@ Namespace & Kinematics Semantics:
 SmartDashboard is replaced
 --------------------------
 * Starting in WPILib for 2027 (introduced in Alpha 7), SmartDashboard, SendableChooser, and Sendable are replaced by the Telemetry and Tunables APIs. SendableChooser is replaced by Selectable, and both the SmartDashboard application and Shuffleboard are deprecated/removed for 2027
+* Read the details `here <./whats_new_telemetry.html>`_.
 
 Constructor-Driven Robot Lifecycle:
 -----------------------------------
