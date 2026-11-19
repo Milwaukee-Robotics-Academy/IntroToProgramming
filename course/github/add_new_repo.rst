@@ -10,3 +10,6 @@ Create New repository
 * Select the `Public` option to make your repository public. This is important because we want to be able to share our code with others. If you select the `Private` option, only you and people you invite will be able to see your code.
 * Click on the `Create repository` button to create your new repository. You will be taken to a page that shows you how to set up your repository. You can ignore this page for now. We will come back to it later.
 
+.. tip:: 
+
+    If you are having problems with logining into Github, you may need to clear the credentials stored in your computer. You can do this by going to `Control Panel > User Accounts > Credential Manager` and removing any credentials related to Github. You can also try logging out of Github and logging back in.

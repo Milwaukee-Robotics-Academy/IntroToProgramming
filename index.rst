@@ -8,8 +8,6 @@ Intro to Programming with Java for FRC
    
    course/github/getting_started_github
    course/github/joining_mra_organization
-   course/github/add_new_repo
-   course/github/switch_logins_vscode
 
 .. toctree:: 
    :maxdepth: 1
@@ -17,14 +15,13 @@ Intro to Programming with Java for FRC
 
    course/2027/getting_started
    course/2027/whats_new_in_wpilib
-   course/2027/last_years_code
 
 .. toctree::
    :maxdepth: 1
    :caption: Getting the YAGSL example
    
-   course/YAGSL/getting_started_2026
-   course/YAGSL/configs_2026   
+   course/YAGSL/getting_started_2027
+   course/YAGSL/configs_2027   
 
 .. toctree:: 
    :maxdepth: 1

@@ -7,9 +7,6 @@ Follow this guide to get started with WPILib for Systemcore. WPILib is a Java li
 
     If you have not run the Installation scripts, you can follow the guide to manually install, here: `WPILib Installation Guide <https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html>`_.
 
-.. admonition:: Try it out
-
-    Copy the command2 folder contents to your new robot project. :code:`cp -r command2/* <your_project_name>` 
 
 
 .. tip:: 
