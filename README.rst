@@ -1,224 +1,81 @@
-IntroToProgramming
-===============
+IntroToProgramming — 2027 FRC WPILib & YAGSL Curriculum
+=======================================================
 
-This is the active development repository for the readthedocs curriculum, found here:
+This is the active development repository for Milwaukee Robotics Academy's FRC 2027 programming documentation, published on Read the Docs:
+
 https://introduction-to-programming.readthedocs.io/en/latest/
 
-Introduction to Programming FOR FRC Curriculum
-
-A list of rules to follow while documenting a .rst file:
-
-Style Guide
------------
-* Follow the appropriate `Headings`_ format.
-
-* Refer to the 'folders' as ``'Modules'`` and files as ``'Pages'`` in this documentation.
-
-* Add captions to important images. Checkout the `Inserting images`_ section to learn how to insert images. 
-
-* Write code snippets in boxes. Checkout the `Documenting code snippets`_ section. 
-
-* Put in links whenever other pages are linked. Open a new tab for a link.
-
-    Formatting lists --
-  
-    * Use numbered lists if they’re steps of a process/ algorithm, etc. Use bullet lists otherwise.
-    
-    * Always have the topic of the list or description of the list directly beforehand. Add colons.
-    
-    * No spaces between different list points or heading of the list and first list point.
-    
-    * Indent sub-lists.
-    
-    * If a numbered sub-list is below a numbered list, use letters.
-
-* Highlight text as per the importance. Checkout `Highlighting text`_ for more details.
-
-* Use a sphinx “note” to refer to things about the course?
-
-* Use a sphinx “reminder” to refer to things about the course?
-
-* Draw boxes in images when a part in the image needs to be highlighted.
-
-Pending tasks
-~~~~~~~~~~~~~
-
-* Remove the “indices and tables” section from index.rst
-
-* Introduce “challenge activities”? Other activities? Is there a difference?
-
-* How do we ask questions? What are the different types of questions?  
-
-* Add captions to important images 
-
-* Find an appropriate name for python programming notes
-
-Headings
---------
-
-* **Main Heading** - usually the title of the module, underline the main title using '=' operator. Make sure the number of '=' sign is more than the number of characters of the title. For example:: 
-  
-     Main Heading
-     ============
-
-* **Sub Heading** - underline the sub title using '-' operator. Make sure the number of '-' sign is more than the number of characters of the sub title. For example:: 
-  
-     Sub Heading
-     -----------
-
-* **Sub sub Heading** - underline the sub sub title using '~' operator. Make sure the number of '~' sign is more than the number of characters of the sub sub title. For example:: 
-  
-     Sub Sub Heading
-     ~~~~~~~~~~~~~~~
-
-
-An example of the above headings can be seen in this image below:
-
-.. figure:: headings.jpg
-    :width: 800
-    
-    The above three headings.
-  
-The code for the above image::
-
-      Main Heading
-      ============
-
-      Sample Text 1
-
-      Sub Heading
-      -----------
-
-      Sample Text 2
-
-      Sub Sub Heading
-      ~~~~~~~~~~~~~~~
-
-      Sample Text 3
-
-Inserting images
+Building Locally
 ----------------
 
-An image is inserted by using the following code::
+Install the Sphinx dependencies and build the HTML site:
 
-     .. figure:: media/image1.jpg
-        :width: 100
-        
-   This is the caption.
+.. code-block:: bash
 
-This command will attach the image titled 'image1' with the '.jpg' extension and width 100, located in the folder titled 'media' relative to the current directory.
+   pip install -r requirements.txt
+   sphinx-build -W -b html . _build/html
 
-Documenting code snippets
--------------------------
+Passing ``-W`` treats warnings as errors (matching Read the Docs' ``fail_on_warning: true`` setting) so broken links, missing ``toctree`` entries, and reStructuredText syntax errors are caught before pushing.
 
-``.. code-block:: programming_language`` is used to write a piece of code in your documentation. For example, including the following lines in your .rst file::
+Directory Structure
+-------------------
 
-      .. code-block:: python
-      
-      if sonarDistance > targetDistance:
+* ``index.rst`` — Landing page and top-level navigation.
+* ``course/getting_started/`` — Environment setup, GitHub onboarding, and Git/VS Code workflow.
+* ``course/wpilib_2027/`` — WPILib 2027 / Systemcore breaking changes, Telemetry & Tunables API, and 2026 code migration.
+* ``course/swerve_yagsl/`` — YAGSL swerve setup, configuration, simulation in AdvantageScope, and odometry.
+* ``course/testing/`` — Safety checklist and robot bench-testing workflow.
+* ``course/about/`` — About FIRST, Milwaukee Robotics Academy, and FRC help resources.
 
-            set a positive effort (move forwards)
+Authoring Style Guide
+---------------------
 
-      if sonarDistance < targetDistance:
+* **Headings**: Ensure the underline matches (or exceeds) the exact character length of the heading:
 
-            set a negative effort (move backwards)
+  * Page title: ``=``
+  * Section heading: ``-``
+  * Subsection heading: ``~``
 
-would get you the following output:
+  .. figure:: headings.jpg
+     :width: 600
 
-  .. code-block:: python
-      
-      if sonarDistance > targetDistance:
+     Heading level conventions.
 
-            set a positive effort (move forwards)
+* **Inline code & paths**: Always wrap inline code and paths in **double backticks** (e.g., ``src/main/deploy``) rather than single backticks, because single backticks render as italics in reStructuredText.
+* **Code blocks**: Leave a blank line after ``.. code-block:: <lang>`` and indent the code consistently:
 
-      if sonarDistance < targetDistance:
+  .. code-block:: java
 
-            set a negative effort (move backwards)
+     Telemetry.publish("Shooter/CurrentRPM", currentRpm);
 
+* **Internal cross-references**: Use Sphinx's ``:doc:`` role instead of hardcoded ``.html`` links:
 
+  .. code-block:: rst
 
-Highlighting text
------------------
-* use ``single asterisk``: (``*text*``) for making the text *italics*.
-* use ``double asterisks``: (``**text**``) for making the text **bold**.
-* use ``double backquotes``: (````text````) for ``highlighting`` the text. Highlight all filenames that have been mentioned as plain text in this documentation. For example: "Let us refer to the code in ``motors.py``." Here, in this plain text, the general rule is to highlight the filename.
+     :doc:`/course/wpilib_2027/telemetry_tunables`
+* **Lists**: Leave a blank line before and after every bulleted or numbered list.
+* **Videos**: Use the ``sphinxcontrib.youtube`` directive instead of raw HTML ``<iframe>`` tags:
 
+  .. code-block:: rst
 
+     .. youtube:: Jd29kzjclV0
 
-Inserting tables
-----------------
+* **Tabs**: Use ``sphinx_design`` tab sets for side-by-side comparisons (e.g., 2026 vs. 2027 APIs):
 
-Use::
+  .. code-block:: rst
 
-      .. list-table:: Title
-         :widths: 25 25 50
-         :header-rows: 1
+     .. tab-set::
 
-         * - Heading row 1, column 1
-           - Heading row 1, column 2
-           - Heading row 1, column 3
-         * - Row 1, column 1
-           -
-           - Row 1, column 3
-         * - Row 2, column 1
-           - Row 2, column 2
-           - Row 2, column 3
+        .. tab-item:: 2027 WPILib
 
-This would output the following table:
+           .. code-block:: java
 
-.. list-table:: Title
-   :widths: 25 25 50
-   :header-rows: 1
+              Telemetry.publish("Odometry/X", x);
 
-   * - Heading row 1, column 1
-     - Heading row 1, column 2
-     - Heading row 1, column 3
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-     
-     
-Math Equations
---------------
-Use::
+        .. tab-item:: 2026 WPILib (Legacy)
 
-      .. math::
+           .. code-block:: java
 
-         (a + b)^2 = a^2 + 2ab + b^2
+              SmartDashboard.putNumber("Odometry/X", x);
 
-         \pi * x = \frac{5}{17}
-
-This would output the following equation:
-
-.. math::
-
-   (a + b)^2 = a^2 + 2ab + b^2
-
-   \pi * x = \frac { 5 } { 17 }     % the fraction looks perfect in Readthedocs, there is some issue with viewing it in Github. 
-      
-Using tabs
-==========
-An example usage of tabs and the youtube extension can be found below.
-
-.. code::
-
-  .. tab-set::
-
-      .. tab-item:: Label1
-          :sync: key1
-
-          .. code-block:: java
-
-              System.out.println("Hello world");
-
-      .. tab-item:: Label2
-          :sync: key2
-
-          .. code-block:: cpp
-
-              std::out << "hello world";
-
-  .. youtube:: dQw4w9WgXcQ
+* **Versioning**: Keep one canonical filename per topic on ``main`` instead of creating ``_2026`` / ``_2027`` file copies. Use Git branches or tags with Read the Docs versioning for prior seasons.

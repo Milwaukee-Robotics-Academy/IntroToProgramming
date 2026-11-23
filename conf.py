@@ -4,37 +4,33 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Introduction to Programming'
-copyright = '2023, Worcester Polytechnic Institute. Modified by Milwaukee Robotics Academy'
-author = 'Worcester Polytechnic Institute'
-release = '2023.0'
+project = 'FRC 2027 Programming with WPILib & YAGSL'
+copyright = '2026, Milwaukee Robotics Academy'
+author = 'Milwaukee Robotics Academy'
+release = '2027.0'
 
 # -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'sphinx_new_tab_link',
-    "sphinx_design",
-    'sphinx_toolbox.collapse',
-    "sphinxcontrib.youtube",
-    "sphinxcontrib.video",
-    "sphinx.ext.autosectionlabel",
-    "sphinx_copybutton"
+    'sphinx_design',
+    'sphinxcontrib.youtube',
+    'sphinx.ext.autosectionlabel',
+    'sphinx_copybutton',
 ]
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+# Prefix section labels with document path to avoid duplicate label warnings
+autosectionlabel_prefix_document = True
 
-
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.rst']
 
 # -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "sphinx_rtd_theme"
+html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    'prev_next_buttons_location': 'both'
+    'prev_next_buttons_location': 'both',
+    'navigation_depth': 3,
 }
-html_static_path = ['_static']
+
 master_doc = 'index'
