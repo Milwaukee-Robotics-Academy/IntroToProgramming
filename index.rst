@@ -1,39 +1,46 @@
+FRC 2027 Programming with WPILib & YAGSL
+========================================
 
-Intro to Programming with Java for FRC
-======================================
+Welcome to Milwaukee Robotics Academy's **2027 FRC Java Programming Curriculum**. This guide walks you step by step from environment and GitHub setup through **WPILib 2027 (Systemcore)**, the new **Telemetry & Tunables APIs**, **YAGSL Swerve Drive**, simulation in **AdvantageScope**, and safe robot **Bench Testing**.
+
+How to Use This Course
+----------------------
+
+Work through the modules below in order:
+
+1. **Getting Started** — Verify network access, install WPILib 2027 and AdvantageScope, join the MRA GitHub organization, and learn the VS Code Git workflow.
+2. **WPILib 2027 & Systemcore** — Learn the major 2027 breaking changes, migrate away from ``SmartDashboard`` to ``Telemetry``/``Tunables``, and upgrade 2026 robot code through hands-on labs.
+3. **Swerve Drive with YAGSL** — Configure a Pigeon 2 swerve drivetrain with YAGSL, simulate it on the AdvantageScope 2D Field, and publish odometry.
+4. **Testing & Bring-Up** — Follow the safety and Utility-mode bench testing checklist before driving on the floor.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 1. Getting Started
+
+   course/getting_started/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 2. WPILib 2027 & Systemcore
+
+   course/wpilib_2027/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 3. Swerve Drive with YAGSL
+
+   course/swerve_yagsl/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 4. Testing & Bring-Up
+
+   course/testing/index
 
 .. toctree::
    :maxdepth: 1
-   :caption: Setting up GitHub
-   
-   course/github/getting_started_github
-   course/github/joining_mra_organization
+   :caption: Resources & Team Signup
 
-.. toctree:: 
-   :maxdepth: 1
-   :caption: 2027!
-
-   course/2027/getting_started
-   course/2027/whats_new_in_wpilib
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Getting the YAGSL example
-   
-   course/YAGSL/getting_started_2027
-   course/YAGSL/configs_2027   
-
-.. toctree:: 
-   :maxdepth: 1
-   :titlesonly:
-   :caption: Bench testing
-
-   course/benchtesting
-.. toctree:: 
-   :maxdepth: 1
-   :caption: Join a team Today!
-   :hidden:   
-
-   course/course_info/about_mra
-   Milwaukee Robotics Academy Signup! <https://www.milwaukeeroboticsacademy.org/programs>
-
+   course/about/about_mra
+   course/about/getting_help
+   Milwaukee Robotics Academy Signup <https://www.milwaukeeroboticsacademy.org/programs>
