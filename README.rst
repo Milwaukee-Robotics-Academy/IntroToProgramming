@@ -25,6 +25,7 @@ Directory Structure
 * ``course/wpilib_2027/`` — WPILib 2027 / Systemcore breaking changes, Telemetry & Tunables API, and 2026 code migration.
 * ``course/swerve_yagsl/`` — YAGSL swerve setup, configuration, simulation in AdvantageScope, and odometry.
 * ``course/testing/`` — Safety checklist and robot bench-testing workflow.
+* ``course/telemetry_logging/`` — WPILib 2027 data logging (``.wpilog``), ``TelemetryTable`` patterns, and AdvantageScope field pose visualization.
 * ``course/about/`` — About FIRST, Milwaukee Robotics Academy, and FRC help resources.
 
 Authoring Style Guide
