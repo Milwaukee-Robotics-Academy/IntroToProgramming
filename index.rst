@@ -13,6 +13,7 @@ Work through the modules below in order:
 3. **Swerve Drive with YAGSL** — Configure a Pigeon 2 swerve drivetrain with YAGSL, simulate it on the AdvantageScope 2D Field, and publish odometry.
 4. **Testing & Bring-Up** — Follow the safety and Utility-mode bench testing checklist before driving on the floor.
 5. **Telemetry & Logging** — Record ``.wpilog`` data with WPILib 2027's ``Telemetry`` and ``DataLogManager`` APIs, and visualize live telemetry, robot poses, and field locations in AdvantageScope.
+6. **Using AI in FRC** — Learn how to use AI coding assistants safely and responsibly—never trusting AI blindly, reviewing every line, and catching outdated APIs and safety bugs before code touches hardware.
 
 .. toctree::
    :maxdepth: 2
@@ -43,6 +44,12 @@ Work through the modules below in order:
    :caption: 5. Telemetry & Logging
 
    course/telemetry_logging/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 6. Using AI in FRC
+
+   course/ai_in_frc/index
 
 .. toctree::
    :maxdepth: 1
